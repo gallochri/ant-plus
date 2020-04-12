@@ -30,4 +30,5 @@ module.exports = {
 	MuscleOxygenScanner: MO.MuscleOxygenScanner,
 	EnvironmentSensor: E.EnvironmentSensor,
 	EnvironmentScanner: E.EnvironmentScanner,
+	Messages: Ant.Messages,
 };
