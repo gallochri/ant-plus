@@ -1,7 +1,7 @@
 'use strict';
 
 let Ant = require('../ant-plus');
-let stick = new Ant.GarminStick2();
+let stick = new Ant.GarminStick3();
 let bicyclePowerSensor = new Ant.BicyclePowerSensor(stick);
 
 
