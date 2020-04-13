@@ -7,9 +7,6 @@ let bicyclePowerSensor = new Ant.BicyclePowerSensor(stick);
 let PowerMeter = function () {
     let channel = 1;
     let deviceId = 0;
-    if (!stick.open()) {
-        console.log('ANT+ USB stick not found!');
-    }
     stick.on('startup', function () {
         console.log('StartUp');
         console.log('Stick Max channels:', stick.maxChannels);
@@ -22,6 +19,10 @@ let PowerMeter = function () {
     });
 
     stick.on('shutdown', function () { console.log('ANT+ shutdown'); });
+
+    if (!stick.open()) {
+        console.log('ANT+ USB stick not found!');
+    }
 
     this.stick = stick;
     this.channel = channel;
